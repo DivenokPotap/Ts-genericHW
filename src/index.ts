@@ -40,7 +40,7 @@
         array: string[]
     }
 
-    	function merge <T, U>(objA:T, objB:U) {
+    	function merge <T extends object, U extends object>(objA:T, objB:U) {
 	 return Object.assign(objA, objB);
         }
 interface Iprops { 
